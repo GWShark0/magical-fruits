@@ -6,4 +6,11 @@
 .fruit__preview {
   width: 200px;
   height: 200px;
+  border: 6px solid transparent;
+  border-radius: 3px;
+  transition: border-color 150ms;
+}
+
+.fruit--selected .fruit__preview {
+  border-color: #34A853;
 }
