@@ -1,21 +1,34 @@
-import React from 'react';
+import React, { Component } from 'react';
 import classNames from 'classnames';
 import fruits from '../fruits';
 
 import './Fruit.css';
 
-function Fruit({ name, selected, onClick }) {
+class Fruit extends Component {
 
-  const className = classNames(
-    'fruit',
-    { 'fruit--selected': selected },
-  );
+  constructor(props) {
+    super(props);
+    this.state = { selected: false };
+    this.toggleSelect = this.toggleSelect.bind(this);
+  }
 
-  return (
-    <div className={className} onClick={() => onClick(name)}>
-      <img className="fruit__preview" src={fruits[name]} alt={name} />
-    </div>
-  )
+  toggleSelect() {
+    this.setState({ selected: !this.state.selected });
+  }
+
+  render() {
+    const { name } = this.props;
+    const className = classNames(
+      'fruit',
+      { 'fruit--selected': this.state.selected },
+    );
+
+    return (
+      <div className={className} onClick={this.toggleSelect}>
+        <img className="fruit__preview" src={fruits[name]} alt={name} />
+      </div>
+    );
+  }
 }
 
 export default Fruit;
