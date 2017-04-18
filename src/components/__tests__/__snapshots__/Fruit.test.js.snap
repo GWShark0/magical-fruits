@@ -1,0 +1,10 @@
+exports[`test should render 1`] = `
+<div
+  className="fruit"
+  onClick={[Function]}>
+  <img
+    alt="apple"
+    className="fruit__preview"
+    src="apple.jpg" />
+</div>
+`;
