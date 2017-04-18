@@ -1,0 +1,9 @@
+.fruit {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.fruit__preview {
+  width: 200px;
+  height: 200px;
+}
