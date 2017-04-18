@@ -25,7 +25,11 @@ class Fruit extends Component {
 
     return (
       <div className={className} onClick={this.toggleSelect}>
-        <img className="fruit__preview" src={fruits[name]} alt={name} />
+        <img
+          className="fruit__preview"
+          src={fruits[name]}
+          alt={name}
+        />
       </div>
     );
   }
