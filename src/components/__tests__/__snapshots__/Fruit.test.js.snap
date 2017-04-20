@@ -6,6 +6,9 @@ exports[`test should render 1`] = `
     alt="apple"
     className="fruit__preview"
     src="apple.jpg" />
+  <h2>
+    apple
+  </h2>
 </div>
 `;
 
@@ -17,6 +20,9 @@ exports[`test should toggle selected state 1`] = `
     alt="banana"
     className="fruit__preview"
     src="banana.jpg" />
+  <h2>
+    banana
+  </h2>
 </div>
 `;
 
@@ -28,5 +34,8 @@ exports[`test should toggle selected state 2`] = `
     alt="banana"
     className="fruit__preview"
     src="banana.jpg" />
+  <h2>
+    banana
+  </h2>
 </div>
 `;
