@@ -11,3 +11,31 @@ exports[`test should render 1`] = `
   </h2>
 </div>
 `;
+
+exports[`test should toggle selected state 1`] = `
+<div
+  className="fruit"
+  onClick={[Function]}>
+  <img
+    alt="banana"
+    className="fruit__preview"
+    src="banana.jpg" />
+  <h2>
+    banana
+  </h2>
+</div>
+`;
+
+exports[`test should toggle selected state 2`] = `
+<div
+  className="fruit fruit--selected"
+  onClick={[Function]}>
+  <img
+    alt="banana"
+    className="fruit__preview"
+    src="banana.jpg" />
+  <h2>
+    banana
+  </h2>
+</div>
+`;

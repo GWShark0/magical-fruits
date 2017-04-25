@@ -17,5 +17,11 @@ it('should toggle selected state', () => {
   );
   let tree;
 
-  // do something with tree?
+  tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+
+  tree.props.onClick();
+
+  tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
 });
