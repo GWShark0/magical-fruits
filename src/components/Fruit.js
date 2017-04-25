@@ -30,6 +30,7 @@ class Fruit extends Component {
           src={fruits[name]}
           alt={name}
         />
+        <h2>{name}</h2>
       </div>
     );
   }

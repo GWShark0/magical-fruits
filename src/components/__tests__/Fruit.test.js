@@ -8,5 +8,14 @@ it('should render', () => {
   );
   const tree = component.toJSON();
 
+  expect(tree).toMatchSnapshot();
+});
+
+it('should toggle selected state', () => {
+  const component = renderer.create(
+    <Fruit name="banana" />
+  );
+  let tree;
+
   // do something with tree?
 });
